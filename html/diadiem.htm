@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Địa điểm Hải Tiến</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/diadiem.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+
+<body>
+
+    <!-- ===== HEADER (GIỮ NGUYÊN) ===== -->
+    <header>
+        <a class="logo">
+            <strong>Hải Tiến</strong>
+            <span>Travel</span>
+        </a>
+
+        <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+        <label for="menu-checkbox" class="menu-toggle">
+            &#9776;
+        </label>
+
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.htm">Trang chủ</a></li>
+                <li><a href="diadiem.htm">Địa điểm tham quan</a></li>
+                <li><a href="amthuc.html">Ẩm thực</a></li>
+                <li><a href="hdvuichs.html">Hoạt động vui chơi</a></li>
+                <li><a href="book-khach-san.html">Khách sạn - Nhà hàng</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="page-content">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-label">DIA DIEM</span>
+                <h1>Tham Quan</h1>
+            </div>
+        </section>
+
+        <!-- ===== PHẦN 1: ĐIỂM ĐẾN NỔI BẬT (CARD GRID - NHẤT QUÁN VỚI INDEX) ===== -->
+        <section class="highlights-section">
+            <h2 class="section-title">Địa điểm nổi bật</h2>
+            <p class="section-subtitle">Những nơi không thể bỏ lỡ khi đến Hải Tiến</p>
+
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="card-image">
+                        <img src="../img/caucanghaitien.jpg" alt="Cầu cảng">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cầu cảng Hải Tiến</h3>
+                        <p>Điểm check-in nổi tiếng với khung cảnh biển tuyệt đẹp và những con thuyền đánh cá đầy màu
+                            sắc.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="card-image">
+                        <img src="../img/chuabut.webp" alt="Chùa Bụt">
+                    </div>
+                    <div class="card-content">
+                        <h3>Chùa Bụt</h3>
+                        <p>Không gian tâm linh yên bình sát biển, nơi thích hợp để tìm kiếm sự bình an và thanh tịnh.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="card-image">
+                        <img src="../img/tuongdailaoquan.jpg" alt="Tượng Lão quân">
+                    </div>
+                    <div class="card-content">
+                        <h3>Tượng đài Lão Quân</h3>
+                        <p>Công trình lịch sử mang ý nghĩa giáo dục truyền thống, là biểu tượng của sự kiên cường dân
+                            tộc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PHẦN 2: CHI TIẾT KHÁM PHÁ (INTERACTIVE) ===== -->
+        <section class="exploration-section">
+            <h2 class="section-title">Khám phá chi tiết</h2>
+            <p class="section-subtitle">Tìm hiểu thêm về từng địa điểm</p>
+
+            <div class="exploration-container">
+                <!-- Card 1: Chùa Bụt -->
+                <div class="exploration-card">
+                    <div class="exp-card-left">
+                        <img src="../img/chuabut.webp" alt="Chùa Bụt">
+                    </div>
+                    <div class="exp-card-right">
+                        <h3>Chùa Bụt</h3>
+                        <p>Đây là một trong những ngôi chùa nổi tiếng nhất ở Hải Tiến, với kiến trúc độc đáo và không
+                            gian
+                            tâm linh yên bình.
+                            Ngôi chùa được xây dựng sát biển, mang đến một không gian riêng tư, yên tĩnh cho du khách
+                            muốn
+                            tìm kiếm sự thanh tịnh.
+                            Từ đây, bạn có thể thưởng ngoạn cảnh biển mênh mông và cảm nhận vẻ đẹp kỳ vĩ của thiên
+                            nhiên.
+                        </p>
+                        <div class="exp-info">
+                            <span>📍 Địa điểm: Hải Tiến, Thanh Hóa</span>
+                            <span>⏰ Giờ hoạt động: 6:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Làng chài -->
+                <div class="exploration-card">
+                    <div class="exp-card-left">
+                        <img src="../img/langchai.jpg" alt="Làng chài">
+                    </div>
+                    <div class="exp-card-right">
+                        <h3>Làng chài truyền thống</h3>
+                        <p>Làng chài là trái tim của Hải Tiến, nơi bạn có thể cảm nhận cuộc sống thực của những người
+                            dân
+                            địa phương.
+                            Với những chiếc thuyền đánh cá đầy màu sắc, những mái lều tranh và những người dân thân
+                            thiện,
+                            làng chài mang đến một
+                            trải nghiệm xác thực về đời sống ven biển. Bạn có thể mua hải sản tươi sống ngay từ ngư dân
+                            hoặc
+                            thậm chí tham gia
+                            các hoạt động đánh cá.</p>
+                        <div class="exp-info">
+                            <span>📍 Địa điểm: Ven biển Hải Tiến</span>
+                            <span>🎣 Hoạt động: Đánh cá, mua hải sản tươi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Chợ đêm -->
+                <div class="exploration-card">
+                    <div class="exp-card-left">
+                        <img src="../img/chodemht.jpg" alt="Chợ đêm">
+                    </div>
+                    <div class="exp-card-right">
+                        <h3>Chợ đêm Hải Tiến</h3>
+                        <p>Chợ đêm Hải Tiến là thiên đường cho những ai yêu thích ẩm thực. Với hàng stall bán hải sản
+                            tươi
+                            sống,
+                            các món ăn địa phương đặc sắc, và những người bán hàng thân thiện, chợ đêm mang đến một trải
+                            nghiệm
+                            ẩm thực không thể quên. Bạn có thể nếm thử những con cua, tôm, cá nướng trên than, các món
+                            canh
+                            chua
+                            chua cay cay và nhiều đặc sản khác.</p>
+                        <div class="exp-info">
+                            <span>📍 Địa điểm: Trung tâm Hải Tiến</span>
+                            <span>🍽️ Giờ hoạt động: 5:00 PM - 11:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Flamingo Hải Tiến -->
+                <div class="exploration-card">
+                    <div class="exp-card-left">
+                        <img src="../img/flamingo.jpg" alt="Khu vui chơi Flamingo Hải Tiến">
+                    </div>
+                    <div class="exp-card-right">
+                        <h3>Khu vui chơi Flamingo Hải Tiến</h3>
+                        <p>Khu vui chơi Flamingo Hải Tiến là điểm giải trí hấp dẫn dành cho gia đình và nhóm bạn.
+                            Với các trò chơi ngoài trời sôi động, khu check-in đẹp và không gian gần biển, Flamingo
+                            Hải Tiến mang đến trải nghiệm vui chơi trọn vẹn cho cả người lớn và trẻ em.
+                            Đây là nơi lý tưởng để thư giãn, chụp hình và tận hưởng bầu không khí biển tươi mát.</p>
+                        <div class="exp-info">
+                            <span>📍 Địa điểm: Ven biển Hải Tiến</span>
+                            <span>🎡 Đặc điểm: Khu vui chơi, giải trí gia đình</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Chùa Hồi Long -->
+                <div class="exploration-card">
+                    <div class="exp-card-left">
+                        <img src="../img/anhchuahoilong.jpg" alt="Chùa Hồi Long">
+                    </div>
+                    <div class="exp-card-right">
+                        <h3>Chùa Hồi Long</h3>
+                        <p>Chùa Hồi Long là điểm đến tâm linh mới lạ ở gần Hải Tiến, nổi bật với kiến trúc truyền thống
+                            và không gian thanh tịnh.
+                            Du khách có thể dâng hương, tĩnh tâm và chiêm nghiệm vẻ đẹp thanh bình của ngôi chùa giữa núi
+                            rừng và sóng biển nhẹ nhàng.</p>
+                        <div class="exp-info">
+                            <span>📍 Địa điểm: Gần Hải Tiến, Thanh Hóa</span>
+                            <span>🛕 Đặc điểm: Tâm linh, kiến trúc truyền thống</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PHẦN 3: GALLERY KHOẢNH KHẮC ===== -->
+        <section class="gallery-section">
+            <h2 class="section-title">Những khoảnh khắc đáng nhớ</h2>
+            <p class="section-subtitle">Bộ sưu tập những cảnh đẹp ghi lại vẻ đẹp của Hải Tiến</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <img src="../img/danflamingo.jpg" alt="Flamingo">
+                    <div class="card-overlay">
+                        <h3>Đàn Hạc - Flamingo</h3>
+                        <p>Nơi du khách tận hưởng vẻ đẹp hoang sơ của thiên nhiên ngọt ngào của bãi biển Hải Tiến.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="../img/rungphiLao.jpg" alt="Rừng phi lao">
+                    <div class="card-overlay">
+                        <h3>Rừng phi lao xanh</h3>
+                        <p>Hàng phi lao xanh biếc tạo thành vành đai tự nhiên</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="../img/anhchohaisan.jpg" alt="Chợ hải sản">
+                    <div class="card-overlay">
+                        <h3>Chợ hải sản tươi sống</h3>
+                        <p>Nơi bạn có thể thưởng thức hải sản ngay tại chỗ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal đơn giản -->
+        <div id="lightbox-modal" class="lightbox-modal">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+
+        <!-- CTA -->
+        <section class="cta">
+            <h2>Sẵn sàng khám phá Hải Tiến?</h2>
+            <p>Lên kế hoạch ngay hôm nay!</p>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Hải Tiến Travel</h3>
+                    <p>Trang web quảng bá du lịch biển Hải Tiến - Thanh Hóa.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Liên hệ</h3>
+                    <p>Email: dulichhaitien@gmail.com</p>
+                    <p>Phone: 0362022101</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Mạng xã hội</h3>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                    <p>Youtube</p>
+                </div>
+            </div>
+            <p class="copyright">© 2026 Hải Tiến Travel</p>
+        </footer>
+    </div>
+
+    <script src="../js/diadiem.js"></script>
+
+</body>
+
+</html>

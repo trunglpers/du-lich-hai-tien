@@ -1,0 +1,483 @@
+/* =========================================
+   1. CÀI ĐẶT CƠ BẢN (RESET)
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+/* =========================================
+   4. PHẦN HIỂN THỊ BANNER & NỘI DUNG DƯỚI
+   ========================================= */
+.hero-banner {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease;
+    object-position: center 90%;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.intro-section {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro-section h1 {
+    color: #c89c3a;
+    /* Màu vàng đồng */
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+}
+
+.intro-section p.subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.intro-section p.description {
+    text-align: justify;
+    font-size: 15px;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* DESTINATIONS */
+
+.destinations {
+    padding: 70px 5%;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+.destinations h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-8px);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-info {
+    padding: 15px;
+}
+
+.destination-info h3 {
+    margin-bottom: 10px;
+    color: #c0392b;
+}
+
+
+/* Activities */
+
+.activities {
+    padding: 70px 5%;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+.activities h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+/* grid */
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+/* card */
+
+.activity-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+
+/* ảnh */
+
+.activity-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* tiêu đề */
+
+.activity-item h3 {
+    margin: 15px 0;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/* hover hiệu ứng */
+
+.activity-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.activity-item:hover img {
+    transform: scale(1.1);
+}
+
+.activity-item:hover h3 {
+    color: #e74c3c;
+}
+
+
+/* GALLERY */
+
+.gallery {
+    padding: 70px 5%;
+    background: #f8f8f8;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.gallery h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.gallery-desc {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+
+/* CTA */
+
+/* CTA */
+
+.cta {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 110px;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../img/anh1.jpg') center/cover no-repeat;
+
+    color: white;
+}
+
+.cta h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.cta button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #c0392b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta button:hover {
+    background: #e74c3c;
+    transform: scale(1.05);
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background: #222;
+    color: #ddd;
+    padding: 50px 5%;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.footer-col {
+    text-align: center;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/*hieu ung scroll*/
+html {
+    scroll-behavior: smooth;
+    /* Tạo hiệu ứng cuộn trang từ từ, mượt mà */
+    scroll-padding-top: 80px;
+    /* BÙ TRỪ: Tránh việc nội dung bị cái thanh Header cố định che mất */
+}
+
+
+/* Bổ sung cho trang Trải nghiệm */
+.sub-banner {
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../img/anhflamingovuichoi.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.sub-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.activities-detail {
+    padding: 80px 10%;
+}
+
+.bg-light {
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.activity-row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.activity-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.activity-img {
+    flex: 1;
+}
+
+.activity-img img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.activity-text {
+    flex: 1;
+}
+
+.activity-text h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.activity-text p {
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.check-list {
+    list-style: none;
+    padding: 0;
+}
+
+.check-list li::before {
+    content: "✓ ";
+    color: #28a745;
+    font-weight: bold;
+}
+
+.check-list li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.activity-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.activity-card-v2 {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.activity-card-v2:hover {
+    transform: translateY(-10px);
+}
+
+.activity-card-v2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.activity-card-v2 h4 {
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+.activity-card-v2 p {
+    padding: 0 15px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 768px) {
+
+    .activity-row,
+    .activity-row.reverse {
+        flex-direction: column;
+    }
+
+    .sub-banner h1 {
+        font-size: 2rem;
+    }
+}
+
+/* video trong activity giống ảnh */
+
+.activity-item video {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* hover giống ảnh */
+
+.activity-item:hover video {
+    transform: scale(1.1);
+}
+
+.activity-img video {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== CHỈ ANIMATE NỘI DUNG ===== */
+#page-content {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.4s ease;
+}
+
+#page-content.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Hiệu ứng vào trang */
+#page-content.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+

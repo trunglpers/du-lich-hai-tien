@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Ẩm Thực Hải Tiến</title>
+    <link rel="stylesheet" href="../css/common-style.css">
+    <link rel="stylesheet" href="../css/amthuccss.css">
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+
+<body>
+
+    <header>
+        <a class="logo">
+            <strong>Hải Tiến</strong>
+            <span>Travel</span>
+        </a>
+
+        <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+        <label for="menu-checkbox" class="menu-toggle">
+            &#9776;
+        </label>
+
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.htm">Trang chủ</a></li>
+                <li><a href="diadiem.htm">Địa điểm tham quan</a></li>
+                <li><a class="active" href="amthuc.html">Ẩm thực</a></li>
+                <li><a href="hdvuichs.html">Hoạt động vui chơi</a></li>
+                <li><a href="book-khach-san.html">Khách sạn - Nhà hàng</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="page-content">
+        <section class="sub-banner">
+            <div class="banner-content">
+                <h1>Tinh Hoa Ẩm Thực Hải Tiến</h1>
+                <p>Khám phá hương vị tuyệt vời của biển cả</p>
+            </div>
+        </section>
+
+        <section class="food-section">
+            <h1 class="section-title">Tinh Hoa Ẩm Thực Biển Xứ Thanh</h1>
+            <p class="section-desc">Khám phá và chọn lọc những hương vị bạn muốn thử nhất khi đến Hải Tiến.</p>
+
+            <div class="filter-container">
+                <button class="filter-btn" data-filter="haisan">Hải sản tươi sống</button>
+                <button class="filter-btn" data-filter="dacsan">Đặc sản địa phương</button>
+                <button class="filter-btn" data-filter="anvat">Ăn vặt / Chợ đêm</button>
+            </div>
+
+            <!-- Thêm món ăn mới bằng cách sao chép một block .food-card và đặt đúng data-category: haisan, dacsan hoặc anvat -->
+            <div class="food-grid" id="food-grid">
+                <!-- Danh sách 15 món hải sản tươi sống -->
+                <div class="food-card" data-category="haisan">
+                    <img src="../img/tomhum.jpg" alt="Tôm hùm hấp">
+                    <div class="card-content">
+                        <h3>Tôm Hùm</h3>
+                        <p>Tôm hùm tươi sống hấp với sả và bia, giữ nguyên vị ngọt tự nhiên, thịt dai giòn.</p>
+                        <span class="price-tag">~ 800k - 1tr / kg</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="haisan">
+                    <img src="../img/cua.jpg" alt="Cua biển luộc">
+                    <div class="card-content">
+                        <h3>Cua Biển</h3>
+                        <p>Cua biển tươi luộc chín, chấm muối tiêu hoặc gạch cua, thịt ngọt, gạch đỏ au.</p>
+                        <span class="price-tag">~ 500k - 800k / kg</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="haisan">
+                    <img src="../img/camu.jpg" alt="Cá mú hấp">
+                    <div class="card-content">
+                        <h3>Cá Mú</h3>
+                        <p>Cá mú tươi hấp với gừng và hành, thịt trắng mềm, vị ngọt thanh, bổ dưỡng.</p>
+                        <span class="price-tag">~ 400k - 600k / kg</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="haisan">
+                    <img src="../img/bachtuoc.jpg" alt="Bạch tuộc nướng">
+                    <div class="card-content">
+                        <h3>Bạch Tuộc</h3>
+                        <p>Bạch tuộc tươi nướng trên than hoa, chấm muối ớt tỏi, giòn tan, thơm ngon.</p>
+                        <span class="price-tag">~ 250k - 400k / kg</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="haisan">
+                    <img src="../img/ochuong.jpg" alt="Ốc hương xào">
+                    <div class="card-content">
+                        <h3>Ốc Hương</h3>
+                        <p>Ốc hương tươi xào với sả ớt, vị cay nồng, thịt dai ngọt, kích thích vị giác.</p>
+                        <span class="price-tag">~ 400k - 550k / kg</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="haisan">
+                    <img src="../img/sohuyet.jpg" alt="Sò huyết hấp">
+                    <div class="card-content">
+                        <h3>Sò Huyết</h3>
+                        <p>Sò huyết tươi hấp với rượu và gừng, mở miệng tự nhiên, thịt ngọt, bổ máu.</p>
+                        <span class="price-tag">~ 150k - 250k / kg</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="haisan">
+                    <img src="../img/ghe.jpg" alt="Ghẹ hấp">
+                    <div class="card-content">
+                        <h3>Ghẹ</h3>
+                        <p>Ghẹ biển tươi hấp với gừng hành, thịt chắc ngọt, gạch đỏ au, thơm lừng.</p>
+                        <span class="price-tag">~ 550k - 750k / kg</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="haisan">
+                    <img src="../img/bebe.jpg" alt="Bề bề nướng">
+                    <div class="card-content">
+                        <h3>Bề Bề</h3>
+                        <p>Bề bề tươi nướng muối ớt, thịt ngọt, vỏ giòn, hương vị đặc trưng biển.</p>
+                        <span class="price-tag">~ 200k - 300k / kg</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="haisan">
+                    <img src="../img/mucong.jpg" alt="Mực ống xào">
+                    <div class="card-content">
+                        <h3>Mực Ống</h3>
+                        <p>Mực ống tươi xào với rau củ, vị ngọt tự nhiên, giòn sần sật, bổ dưỡng.</p>
+                        <span class="price-tag">~ 250k - 400k / kg</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="haisan">
+                    <img src="../img/tomsu.jpg" alt="Tôm sú hấp">
+                    <div class="card-content">
+                        <h3>Tôm Sú</h3>
+                        <p>Tôm sú tươi hấp với sả bia, thịt ngọt lịm, vỏ đỏ au, giữ nguyên dinh dưỡng.</p>
+                        <span class="price-tag">~ 300k - 500k / kg</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="haisan">
+                    <img src="../img/cangu.jpg" alt="Cá ngừ đại dương">
+                    <div class="card-content">
+                        <h3>Cá Ngừ Đại Dương</h3>
+                        <p>Cá ngừ tươi sống, thịt đỏ hồng, ít mỡ, giàu protein, nướng hoặc áp chảo.</p>
+                        <span class="price-tag">~ 350k - 550k / kg</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="haisan">
+                    <img src="../img/casu.jpg" alt="Cá Sủ nướng">
+                    <div class="card-content">
+                        <h3>Cá Sủ</h3>
+                        <p>Cá sủ tươi nướng muối ớt, thịt thơm ngon, ngọt vừa vặn, phù hợp cho bữa hải sản.</p>
+                        <span class="price-tag">~ 250k - 400k / kg</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="haisan">
+                    <img src="../img/cadoi.jpg" alt="Cá Đối nướng">
+                    <div class="card-content">
+                        <h3>Cá Đối Biển</h3>
+                        <p>Cá đối nướng thơm, thịt chắc, vị ngọt tự nhiên, ăn kèm nước mắm gừng chua cay.</p>
+                        <span class="price-tag">~ 70k - 100k / kg</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="haisan">
+                    <img src="../img/hausua.jpg" alt="Hàu nướng">
+                    <div class="card-content">
+                        <h3>Hàu Sữa</h3>
+                        <p>Hàu tươi nướng mỡ hành, thơm nức mũi, thịt ngọt mặn, kích thích vị giác.</p>
+                        <span class="price-tag">~ 10k - 30k / con</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="haisan">
+                    <img src="../img/cathu.jpg" alt="Cá thu nướng">
+                    <div class="card-content">
+                        <h3>Cá Thu Biển</h3>
+                        <p>Cá thu tươi nướng muối ớt, da giòn, thịt mềm ngọt, giàu dinh dưỡng.</p>
+                        <span class="price-tag">~ 250k - 400k / kg</span>
+                    </div>
+                </div>
+                <!-- Danh sách đặc sản địa phương Thanh Hóa -->
+                <div class="food-card" data-category="dacsan">
+                    <img src="../img/goicanhech.jpg" alt="Gỏi cá nhệch Nga Sơn">
+                    <div class="card-content">
+                        <h3>Gỏi Cá Nhệch Nga Sơn</h3>
+                        <p>Cá nhệch tươi sống cuộn với lá đinh lăng, sung, khế, chấm nước mắm chua ngọt độc đáo.</p>
+                        <span class="price-tag">~ 300k - 500k / mâm</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="dacsan">
+                    <img src="../img/nemchua.jpg" alt="Nem chua Thanh Hóa">
+                    <div class="card-content">
+                        <h3>Nem Chua Thanh Hóa</h3>
+                        <p>Nem được làm từ thịt lợn, bì lợn, vị chua cay đặc trưng, giòn dai, ăn kèm rau sống.</p>
+                        <span class="price-tag">~ 30k - 50k / chục</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="dacsan">
+                    <img src="../img/banhcuon.jpg" alt="Bánh cuốn Thanh Hóa">
+                    <div class="card-content">
+                        <h3>Bánh Cuốn Thanh Hóa</h3>
+                        <p>Bánh cuốn mỏng, nhân thịt nạc, mộc nhĩ, ăn kèm chả và nước mắm chua ngọt.</p>
+                        <span class="price-tag">~ 40k - 60k / đĩa</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="dacsan">
+                    <img src="../img/banhkhoai.jpg" alt="Bánh khoái Thanh Hóa">
+                    <div class="card-content">
+                        <h3>Bánh Khoái Thanh Hóa</h3>
+                        <p>Bánh khoái Thanh Hóa giòn tan, nhân tôm thịt, ăn kèm rau sống và nước mắm chua ngọt đặc
+                            trưng.</p>
+                        <span class="price-tag">~ 10k - 20k / chiếc</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="dacsan">
+                    <img src="../img/banhgai.jpg" alt="Bánh gai Thanh Hóa">
+                    <div class="card-content">
+                        <h3>Bánh Gai Thanh Hóa</h3>
+                        <p>Bánh làm từ bột gạo nếp, nhân đậu xanh, dừa, vị ngọt thanh, giòn tan.</p>
+                        <span class="price-tag">~ 20k - 30k / cái</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="dacsan">
+                    <img src="../img/mamtom.jpg" alt="Mắm tôm">
+                    <div class="card-content">
+                        <h3>Mắm Tôm Ba Làng Thanh Hóa</h3>
+                        <p>Mắm tôm tươi, vị mặn ngọt, dùng làm nước chấm hoặc ăn kèm rau sống.</p>
+                        <span class="price-tag">~ 100k - 150k / lọ</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="dacsan">
+                    <img src="../img/nomtep.jpg" alt="Nộm tép tươi">
+                    <div class="card-content">
+                        <h3>Nộm Tép Tươi</h3>
+                        <p>Nộm tép chua cay, tươi ngon cùng rau sống và nước mắm đặc trưng, món ăn nhẹ đậm đà.</p>
+                        <span class="price-tag">~ 120k - 180k / đĩa</span>
+                    </div>
+                </div>
+                <!-- Danh sách món ăn vặt chợ đêm -->
+                <div class="food-card" data-category="anvat">
+                    <img src="../img/haunuong.jpg" alt="Hàu nướng mỡ hành">
+                    <div class="card-content">
+                        <h3>Hàu Nướng Mỡ Hành</h3>
+                        <p>Hàu tươi nướng trên than hoa với mỡ hành, thơm nức mũi, kích thích vị giác.</p>
+                        <span class="price-tag">~ 10k - 15k / con</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="anvat">
+                    <img src="../img/bachtuocnuong.jpg" alt="Bạch tuộc nướng">
+                    <div class="card-content">
+                        <h3>Bạch Tuộc Nướng</h3>
+                        <p>Bạch tuộc tươi nướng vàng giòn, chấm muối ớt tỏi, dai ngọt, ăn vặt cực cuốn.</p>
+                        <span class="price-tag">~ 200k - 400k / đĩa</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="anvat">
+                    <img src="../img/ocxao.jpg" alt="Ốc xào sả ớt">
+                    <div class="card-content">
+                        <h3>Ốc Xào Sả Ớt</h3>
+                        <p>Ốc tươi xào với sả ớt, vị cay nồng, thịt dai ngọt, món vặt hải sản hấp dẫn.</p>
+                        <span class="price-tag">~ 150k - 350k / đĩa</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="anvat">
+                    <img src="../img/changa.jpg" alt="Chân gà nướng">
+                    <div class="card-content">
+                        <h3>Chân Gà Nướng</h3>
+                        <p>Chân gà nướng vàng giòn, chấm muối tiêu chanh, mềm ngọt, ăn vặt không thể thiếu.</p>
+                        <span class="price-tag">~ 50k - 100k / đĩa</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="anvat">
+                    <img src="../img/banhmi.jpg" alt="Bánh mì thịt nướng">
+                    <div class="card-content">
+                        <h3>Bánh Mì Thịt Nướng</h3>
+                        <p>Bánh mì nướng với thịt heo, rau sống, đồ chua, nước tương, món vặt đường phố.</p>
+                        <span class="price-tag">~ 15k - 25k / ổ</span>
+                    </div>
+                </div>
+                <div class="food-card" data-category="anvat">
+                    <img src="../img/xoi.jpg" alt="Xôi mặn hải sản">
+                    <div class="card-content">
+                        <h3>Xôi Mặn Hải Sản</h3>
+                        <p>Xôi nếp dẻo thơm với tôm, thịt, lạp xưởng, trứng, món vặt no bụng chợ đêm.</p>
+                        <span class="price-tag">~ 30k - 50k / hộp</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="estimator-section">
+            <div class="estimator-container">
+                <h2 class="section-title">Công Cụ Ước Tính Chi Phí Ăn Uống</h2>
+                <p style="text-align: center; margin-bottom: 20px; color: var(--text-color);">Chọn các món bạn muốn thử
+                    nghiệm để xem khoảng giá dự kiến nhé!</p>
+
+                <div class="estimator-grid">
+                    <div class="selection-col">
+                        <details class="estimator-category" open>
+                            <summary>Hải Sản Tươi Sống</summary>
+                            <div class="category-content">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="800000" data-max="1000000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Tôm Hùm</strong>
+                                        <span>800k - 1tr VNĐ/kg</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="500000" data-max="800000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Cua Biển</strong>
+                                        <span>500k - 800k VNĐ/kg</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="400000" data-max="600000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Cá Mú</strong>
+                                        <span>400k - 600k VNĐ/kg</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="250000" data-max="400000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Bạch Tuộc</strong>
+                                        <span>250k - 400k VNĐ/kg</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="400000" data-max="550000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Ốc Hương</strong>
+                                        <span>400k - 550k VNĐ/kg</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="150000" data-max="250000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Sò Huyết</strong>
+                                        <span>150k - 250k VNĐ/kg</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="550000" data-max="750000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Ghẹ</strong>
+                                        <span>550k - 750k VNĐ/con</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="200000" data-max="300000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Bề Bề</strong>
+                                        <span>200k - 300k VNĐ/kg</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="250000" data-max="400000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Mực Ống</strong>
+                                        <span>250k - 400k VNĐ/kg</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="300000" data-max="500000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Tôm Sú</strong>
+                                        <span>300k - 500k VNĐ/kg</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="350000" data-max="550000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Cá Ngừ Đại Dương</strong>
+                                        <span>350k - 550k VNĐ/kg</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="250000" data-max="400000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Cá Sủ</strong>
+                                        <span>250k - 400k VNĐ/kg</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="70000" data-max="100000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Cá Đối</strong>
+                                        <span>70k - 100k VNĐ/kg</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="10000" data-max="30000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Hàu</strong>
+                                        <span>10k - 30k VNĐ/con</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="250000" data-max="400000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Cá Thu</strong>
+                                        <span>250k - 400k VNĐ/kg</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </details>
+
+                        <details class="estimator-category">
+                            <summary>Đặc Sản Địa Phương</summary>
+                            <div class="category-content">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="300000" data-max="500000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Gỏi Cá Nhệch Nga Sơn</strong>
+                                        <span>300k - 500k VNĐ/mâm</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="30000" data-max="50000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Nem Chua Thanh Hóa</strong>
+                                        <span>30k - 50k VNĐ/chục</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="300000" data-max="500000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Gỏi Cá Nhệch Nga Sơn</strong>
+                                        <span>300k - 500k VNĐ/mâm</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="40000" data-max="60000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Bánh Cuốn Thanh Hóa</strong>
+                                        <span>40k - 60k VNĐ/đĩa</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="10000" data-max="20000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Bánh Khoái Thanh Hóa</strong>
+                                        <span>10k - 20k VNĐ/chiếc</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="20000" data-max="30000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Bánh Gai Thanh Hóa</strong>
+                                        <span>20k - 30k VNĐ/cái</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="100000" data-max="150000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Mắm Tôm Ba Làng Thanh Hóa</strong>
+                                        <span>100k - 150k VNĐ/lọ</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="120000" data-max="180000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Nộm Nham Moi Tươi</strong>
+                                        <span>120k - 180k VNĐ/đĩa</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </details>
+
+                        <details class="estimator-category">
+                            <summary>Ăn Vặt / Chợ Đêm</summary>
+                            <div class="category-content">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="10000" data-max="15000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Hàu Nướng Mỡ Hành</strong>
+                                        <span>10k - 15k VNĐ/con</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="200000" data-max="400000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Bạch Tuộc Nướng</strong>
+                                        <span>200k - 400k VNĐ/đĩa</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="150000" data-max="350000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Ốc Xào Sả Ớt</strong>
+                                        <span>150k - 350k VNĐ/đĩa</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="50000" data-max="100000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Chân Gà Nướng</strong>
+                                        <span>50k - 100k VNĐ/đĩa</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="15000" data-max="25000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Bánh Mì Thịt Nướng</strong>
+                                        <span>15k - 25k VNĐ/ổ</span>
+                                    </div>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" class="food-checkbox" data-min="30000" data-max="50000">
+                                    <span class="checkmark"></span>
+                                    <div class="item-info">
+                                        <strong>Xôi Mặn Hải Sản</strong>
+                                        <span>30k - 50k VNĐ/hộp</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="result-col">
+                        <div class="people-input-group">
+                            <label for="people-count">Số người:</label>
+                            <input type="number" id="people-count" min="1" value="1">
+                        </div>
+
+                        <button id="calculate-btn" class="calculate-btn">Tính Chi Phí</button>
+
+                        <div class="price-board">
+                            <p>Tổng chi phí:</p>
+                            <div class="range-display">
+                                <span id="total-min">0 VNĐ</span>
+                                <span class="divider">đến</span>
+                                <span id="total-max">0 VNĐ</span>
+                            </div>
+                            <p>Chi phí mỗi người:</p>
+                            <div class="range-display">
+                                <span id="per-min">0 VNĐ</span>
+                                <span class="divider">đến</span>
+                                <span id="per-max">0 VNĐ</span>
+                            </div>
+                            <p class="note">*Giá mang tính chất tham khảo, có thể thay đổi theo mùa vụ và kích cỡ.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <h2>Sẵn sàng khám phá Hải Tiến?</h2>
+            <p>Hãy lên kế hoạch cho chuyến du lịch đáng nhớ của bạn ngay hôm nay.</p>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Hải Tiến Travel</h3>
+                    <p>Trang web quảng bá du lịch biển Hải Tiến - Thanh Hóa.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Liên hệ</h3>
+                    <p>Email: dulichhaitien@gmail.com</p>
+                    <p>Phone: 0362022101</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Mạng xã hội</h3>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                    <p>Youtube</p>
+                </div>
+            </div>
+            <p class="copyright">© 2026 Hải Tiến Travel</p>
+        </footer>
+    </div>
+
+    <script src="../js/amthuc.js"></script>
+
+</body>
+
+</html>
