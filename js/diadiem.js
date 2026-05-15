@@ -23,9 +23,7 @@
             }
 
             // Event listeners
-            galleryCards.forEach(card => {
-                card.addEventListener('click', () => openLightbox(card));
-            });
+            // Thực hiện chỉ hover, không bật lightbox khi click
 
             if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
 
